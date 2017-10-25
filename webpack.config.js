@@ -17,7 +17,7 @@ var getHtmlConfig = function(name){
 }
 var config = {
      entry: {
-        'common': ['./src/common/common.js'],
+        'common': ['./src/page/common/index.js'],
         'index' : ['./src/page/index/index.js'],
         'login' : ['./src/page/login/index.js'],
      },
@@ -37,6 +37,16 @@ var config = {
             },
             { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]' },//ext  文件扩展名
         ]
+    },
+    //配置别名
+    resolve : {
+        alias : {
+            util           : __dirname + '/src/util',
+            page           : __dirname + '/src/page',
+            service        : __dirname + '/src/service',
+            image          : __dirname + '/src/image',
+            node_modules   : __dirname + '/node_modules',
+        }
     },
      plugins:[
      // 提供公共代码// 独立通用模块到js/base.js

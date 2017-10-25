@@ -1,0 +1,17 @@
+/*
+* @Author: wlyer
+* @Date:   2017-10-25 21:06:14
+* @Last Modified by:   wlyer
+* @Last Modified time: 2017-10-25 21:18:09
+*/
+.nav-simple{
+    height:60px;
+    inline-height:60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.nav-simple .logo{
+    font-size: 26px;
+    font-weight: bold;
+    color:#c60023;
+}

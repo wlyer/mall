@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"set WEBPACK_DEV=dev &&webpack-dev-server --inline --port 8888",
-    "build":"set WEBPACK_DEV=online webpack -p",
+    "dev": "set WEBPACK_DEV=dev &&webpack-dev-server --inline --port 8888",
+    "build": "set WEBPACK_DEV=online webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,5 +30,8 @@
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.9.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2"
+  }
 }

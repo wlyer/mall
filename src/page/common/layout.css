@@ -1,0 +1,97 @@
+/*
+* @Author: wlyer
+* @Date:   2017-10-25 22:21:27
+* @Last Modified by:   wlyer
+* @Last Modified time: 2017-10-25 22:58:56
+*/
+
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*12px/1.5  1.5 表示行间距1.5倍
+tahoma,arial,Microsoft YaHei,sans-serif  从前往后匹配这些字体
+*/
+body{
+    background: #f6f6f6;
+    font: 12px/1.5 tahoma,arial,Microsoft YaHei,sans-serif;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor:pointer;
+}
+input[type='chekbox']{
+    cursor: pointer;
+}
+
+/*定宽布局  常用1090
+overflow: hidden;  除了隐藏过多的元素以外，还有清除浮动的作用（若两个元素都是float:left....没听清了）
+*/
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+/*大屏幕适配*/
+.large .w{
+    width:1600px;
+}
+/*全局通用样式*/
+/*隐藏*/
+.hide{
+    display: none;
+}
+/*超链接样式*/
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    color: #c80012;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+/*按钮样式*/
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #c60023;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.btn-min{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+/*loading*/
+.loading{
+    margin: 10px auto;
+    display: block;
+    height: 65px;
+    width: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url('../../image/icon/loading.gif') no-repeat;
+    opacity: .6;
+}
