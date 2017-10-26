@@ -2,15 +2,15 @@
 * @Author: wlyer
 * @Date:   2017-10-23 22:27:58
 * @Last Modified by:   wlyer
-* @Last Modified time: 2017-10-25 22:07:46
+* @Last Modified time: 2017-10-26 23:23:22
 */
 'use strict'
 // import _mm from 'util/mm.js';
 var _mm = require('util/mm.js');
-require('page/common/nav-simple/index.js');
-
-console.log(_mm.getUrlParam('keyWord'));
-
+//require('page/common/nav-simple/index.js');
+require('page/common/nav/index.js');
+require('page/common/header/index.js');
+var navSide = require('page/common/nav-side/index.js');
 var html = '<div>{{data}}</div>'
 var data = {
     data : 'qwe'
@@ -24,4 +24,7 @@ _mm.request({
     error : function(err){
         console.log(err);
     }
+});
+navSide.init({
+    name:'user-center'
 });

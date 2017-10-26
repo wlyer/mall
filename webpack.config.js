@@ -31,9 +31,13 @@ var config = {
      },
     module: {
         loaders:  [
-           {
+            {
                 test: /\.css$/,
-                 loader:  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader'})
+                loader:  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader'})
+            },
+            {
+                test: /\.string$/,
+                loader:  'html-loader'
             },
             { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]' },//ext  文件扩展名
         ]
